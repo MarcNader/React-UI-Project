@@ -1,0 +1,15 @@
+.checkbox-span{
+    display: flex;
+    align-items: center;
+
+    .checkbox{
+        width: 2em;
+        height: 1em;
+        &:checked {
+            accent-color: #FF6370;
+            
+        }
+    }
+}
+
+

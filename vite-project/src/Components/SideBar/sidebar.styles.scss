@@ -1,0 +1,66 @@
+@mixin verticalAlignment {
+    display: flex;
+    flex-direction: column;
+   
+}
+.side-bar{
+    @include verticalAlignment();
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 7%;
+    width: 20%;
+    height: 100vh;
+    padding-left: 2%;
+    // box-sizing: border-box;
+    .Header{
+        margin-top: 5%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      
+        .NavIcon{
+            background-color: purple;
+            margin-right: 0.3em;
+            padding: 0.3em;
+            border-radius: 5px;
+                }
+    }
+    .Body{
+        @include verticalAlignment();
+        gap: 5%;
+    }
+        .Link{
+            display: flex;
+            align-items: center;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            padding-right: 5em;
+            border-radius: 7%;
+            color: #5F6165;
+            text-decoration: none;
+
+            &:hover {
+                background-color: #F3F5F8;
+            }
+
+            &.active {
+                background-color: #F3F5F8;
+            }
+            .logo{
+                width: 20px;
+                margin-right: 5px;
+            
+
+            }
+        }
+       
+    
+    .Footer{
+        @include verticalAlignment();
+        justify-content: end;
+        height: 100%;
+
+    }
+      
+
+}

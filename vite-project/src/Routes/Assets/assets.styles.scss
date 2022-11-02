@@ -1,0 +1,79 @@
+.booking-container{
+    height: 100%;
+    background-color: #F4F4F4;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    .main-part{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 100%;
+
+        .booking-car{
+            position: relative;
+            width: 25%;
+            height: 80%;
+            background-color: #438FFE;
+            border-radius: 5%;
+    
+            .col-md-6{
+                border-right: 0.1px ridge #579BFF;
+            }
+            #hello{
+                display: inline-block;
+                    color: #C6DCFC;
+                    font-weight: lighter;
+            }
+    
+            .threeD-car{
+                position:absolute;
+                top:34%;
+                left: 12%;
+                // right: 50%;
+                width: 80%;
+            }
+            
+        }
+    
+    
+        .booking-part2{
+            display: flex;
+            flex-direction: column;
+            width: 68%;
+            .second-row{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .available-sensors{
+                    width: 50%;
+                    background-color: white;
+                    border-radius: 5%;
+
+                    hr{
+                        // margin-bottom: 1em;
+                        color: gray;
+                    }
+
+                    .button{
+                        background-color:#FF6370;
+                        color: white;
+                        border: none;
+                        border-radius: 10%;
+                    }
+                   
+                }
+               
+            }
+
+            .third-row{
+                width: 100%;
+                
+            }
+        }
+        
+    }
+}
+
+

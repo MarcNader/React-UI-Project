@@ -1,0 +1,82 @@
+
+.chartcard{ 
+
+    background-color: white;
+
+    &:hover{
+        background-color:#A162F7;
+
+        .energy{
+            color: white;
+        }
+
+        .range{
+            color: white;
+        }
+
+        .break-fluid{
+            color: white;
+        }
+
+        .tire-wear{
+            color: white;
+        }
+        
+    }
+    width: 22%;
+    border-radius: 6%;
+    padding-bottom: 2em;
+    padding-top: 1em;
+
+    .container{
+        width: 50%;
+    }
+
+    .logo{
+       display: flex;
+       justify-content: center;
+
+       .logo-background{
+            border-radius: 100%;
+            background-color:#A66FF0;
+            padding: 8%;
+            padding-inline: 12%;
+       }
+    }
+
+    .energy{
+        padding-top: 9%;
+        padding-bottom: 20%;
+        color: black;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .range {
+        padding-top: 9%;
+        padding-bottom: 20%;
+        color: black;
+        display: flex;
+        justify-content: center;
+    }
+    .break-fluid{
+        width: 5.1em;
+        padding-top: 9%;
+        padding-bottom: 20%;
+        color:black;
+        display: flex;
+        justify-content: center;
+    }
+    .tire-wear{
+        width: 5.1em;
+        padding-top: 9%;
+        padding-bottom: 20%;
+        color: black;
+        display: flex;
+        justify-content: center;
+    }
+
+
+  
+}
