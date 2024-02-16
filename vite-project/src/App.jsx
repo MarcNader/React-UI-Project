@@ -12,10 +12,9 @@ import SignUp from './Routes/Signup/signup.component';
 import SignIn from './Routes/Sign-In/signin.component';
 import Messages from './Routes/Messages/messages';
 function App() {
-    
+  
   return (
          <Routes>
-
           <Route index element={<SignIn/>}/>
             <Route path="/" element={<Navigation/>}>
             <Route path='/dashboard' element={<DashBoard/>}/>
@@ -25,11 +24,8 @@ function App() {
             <Route path='/buy-cars' element={<BuyCars/>}/>
             <Route path='/calendar' element={<Calendars/>}/>
             <Route path='/messages' element={<Messages/>}/>
-
           </Route>
-
           <Route path='/SignUp' element={<SignUp/>}/>
-
          </Routes>
   )
 }

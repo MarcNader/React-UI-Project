@@ -18,44 +18,42 @@ import GraphicChart from "../GraphicChart/graphicchart.component"
 
 const DashBoard = () => {
 
-    // const CardsData = [
-    //     {
-    //         title:"Energy",
-    //         percentage: "45",
-    //         value: "45",
-    //         logo: {Lightning},
-    //         Class: "energy",
-    //         id:1,
-    //         dy:10,
-    //         dx:-22,
-    //     },
-    //     {
-    //         title:"Range",
-    //         percentage: "157k",
-    //         value: "45",
-    //         logo: {Arrow},
-    //         Class: "range",
-    //         id:2,
-    //     },
-    //     {
-    //         title:"Range",
-    //         percentage: "45",
-    //         value: "45",
-    //         logo: {Lightning},
-    //         Class: "energy",
-    //         id:3,
-    //     },
-    //     {
-    //         title:"Energy",
-    //         percentage: "45",
-    //         value: "45",
-    //         logo: {Lightning},
-    //         Class: "energy",
-    //         id:4,
-    //     },
-
-
-    // ]
+    const CardsData = [
+        {
+            title:"Energy",
+            percentage: "45",
+            value: "45",
+            logo: {Lightning},
+            Class: "energy",
+            id:1,
+            dy:10,
+            dx:-22,
+        },
+        {
+            title:"Range",
+            percentage: "157k",
+            value: "45",
+            logo: {Arrow},
+            Class: "range",
+            id:2,
+        },
+        {
+            title:"Range",
+            percentage: "45",
+            value: "45",
+            logo: {Lightning},
+            Class: "energy",
+            id:3,
+        },
+        {
+            title:"Energy",
+            percentage: "45",
+            value: "45",
+            logo: {Lightning},
+            Class: "energy",
+            id:4,
+        },
+    ]
 
     const DashboardData = [
         {
@@ -107,20 +105,13 @@ const DashBoard = () => {
     return (
 
         <div className="main-section">
-                
                 <div className="part-one">
-                {/* {CardsData.map(element=> {
+                {CardsData.map(element=> {
                     console.log(element.title);
                    return( <Cardchart key={element.id} title={element.title} percentage={element.percentage} value={element.value} logo={element.logo} Class={"energy"} dy={10} dx={-22}/>
-                )})} */}
-                    <Cardchart title={"Energy"} percentage={"45"}value={"45"} logo={Lightning} Class={"energy"} dy={10} dx={-22}/>
-                    <Cardchart title={"Range"} percentage={"157k"} value={"45"} logo={Arrow} Class={"range"}dy={10} dx={-40}/>
-                    <Cardchart title={"Break Fluid"} percentage={"9"} value={"9"} logo={WaterDrop} Class={"break-fluid"}dy={10} dx={-17}/>
-                    <Cardchart title={"Tire Wear"} percentage={"25"} value={"25"} logo={TireWear} Class={"tire-wear"}dy={10} dx={-22}/>
+                )})}
                 </div>
-
                 <div className="part-two"> 
-
                 <BarCharts/>
 
                 <GraphicChart data={DashboardData} />
